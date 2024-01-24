@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+section header ul li a{
+    font-size: 13px;
+    color: black;
+}
+
+section header ul li a:hover{
+    text-decoration: underline;
+}
+
+section header ul button{
+    padding: 8px;
+    border-radius: 3px;
+    background: #1a73ef;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+section header ul button:hover{
+
+    background: #3284ee;
+}
+
+.img_apps{
+    width: 23px;
+}
+
+.main{
+    margin-top: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 580px;
+    margin-bottom: 200px;
+}
+
+.main .searchBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main .searchBox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 10px #ccc;
+}
+
+.main .searchBox .search :hover{
+    border: 1px solid transparent;
+}
+
+.main .searchBox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    pointer-events: none;
+}
+
+.logo{
+    width: 50%;
+}
+
+.lupa{
+    width: 17px;
+}
+
+.mic{
+    width: 25px;
+    margin-left: 450px;
+}
+
+.lens{
+    width: 25px;
+}
+
+.add-shortcut-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-shortcut-button:hover {
+    background-color: #ccccccb5;
+}
+
+.plus-icon {
+    width: 40px; /* ajuste conforme necessário */
+    height: 40px; /* ajuste conforme necessário */
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
