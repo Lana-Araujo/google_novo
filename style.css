@@ -65,13 +65,13 @@ section header ul button:hover{
 }
 
 .main{
-    margin-top: 115px;
+    margin-top: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 580px;
-    margin-bottom: 200px;
+    margin-bottom: 170px;
 }
 
 .main .searchBox{
@@ -124,8 +124,14 @@ section header ul button:hover{
     width: 25px;
 }
 
-.add-shortcut-button {
-    margin-top: 20px;
+.google-search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.add-shortcut-button,
+.add-webstore-button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,15 +143,38 @@ section header ul button:hover{
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: small;
 }
 
-.add-shortcut-button:hover {
+.add-shortcut-button:hover,
+.add-webstore-button:hover {
     background-color: #ccccccb5;
 }
 
-.plus-icon {
-    width: 40px; /* ajuste conforme necessário */
-    height: 40px; /* ajuste conforme necessário */
+.plus-icon,
+.web-store {
+    width: 60px; /* ajuste conforme necessário */
+    height: 50px; /* ajuste conforme necessário */
     margin-bottom: 10px;
     border-radius: 50%;
 }
+
+/* Add this CSS after the existing styles */
+.customize-chrome-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ffffff; /* White background */
+    color: #4285f4; /* Blue text color */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0px 1px 10px #ccc; /* Shadow similar to the input */
+}
+
+.customize-chrome-button:hover {
+    background-color: #f0f0f0; /* Adjust the hover background color as needed */
+}
+
